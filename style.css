@@ -96,7 +96,7 @@ fieldset {
   margin: 0;
   padding: 0;
   position: relative;
-  background: url(/photos/photo.jpg) center/cover no-repeat;
+  background: url(photos/photo.jpg) center/cover no-repeat;
   width: 80%;
   height: 100vh;
 }
@@ -111,7 +111,7 @@ fieldset {
 }
 
 .banner img {
-  background: url(/photos/transparent\ magic\ touch\ logo.png) cover;
+  background: url(photos/transparent-magic-touch-logo.png) cover;
   position: absolute;
   top: 55%;
   left: 50%;
