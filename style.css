@@ -40,9 +40,8 @@ input {
   padding: 5px 5px 5px 30px;
 }
 
-input:focus,
 input:hover {
-  box-shadow: 1px 1px 1px 1px #929292;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
   border: 1px solid #3e61c9;
 }
 
@@ -119,4 +118,14 @@ fieldset {
   width: 40%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+
+.error-message {
+  color: red;
+  display: none;
+}
+
+/* Style password fields with a red border when they don't match */
+.password-mismatch .form-group input[type="password"] {
+  border: 2px solid red;
 }

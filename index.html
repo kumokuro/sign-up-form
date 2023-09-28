@@ -12,6 +12,7 @@
     />
     <link href="/style.css" rel="stylesheet" />
   </head>
+
   <body>
     <!-- Header Image -->
 
@@ -27,7 +28,7 @@
     </div>
 
     <!-- Form -->
-    <form action="#" method="post">
+    <form action="#" method="post" id="registration-form">
       <!-- Top -->
       <section class="top">
         <h2>
@@ -46,34 +47,37 @@
           <ul>
             <div class="fullname">
               <li>
-                <label for="first_name">FIRST NAME</label>
-                <input type="text" id="first_name" />
+                <label for="first-name">FIRST NAME*</label>
+                <input type="text" id="first-name" required />
               </li>
               <li class="right-side">
-                <label for="last_name">LAST NAME</label>
-                <input type="text" id="last_name" />
+                <label for="last-name">LAST NAME*</label>
+                <input type="text" id="last-name" required />
               </li>
             </div>
             <div class="row-2">
               <li>
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" />
+                <label for="email">EMAIL*</label>
+                <input type="email" id="email" required />
               </li>
               <li class="right-side">
-                <label for="phone_number">PHONE NUMBER</label>
-                <input type="tel" id="phone_number" />
+                <label for="phone-number">PHONE NUMBER</label>
+                <input type="tel" id="phone-number" />
               </li>
             </div>
             <div class="row-3">
               <li>
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password" />
+                <label for="password" name="password">PASSWORD*</label>
+                <input type="password" id="password" required />
               </li>
               <li class="right-side">
-                <label for="confirm_password">CONFIRM PASSWORD</label>
-                <input type="password" id="confirm_password" />
+                <label for="confirm-password" name="confirm-password"
+                  >CONFIRM PASSWORD*</label
+                >
+                <input type="password" id="confirm-password" required />
               </li>
             </div>
+            <div id="password-error" class="error-message"></div>
           </ul>
         </fieldset>
       </section>
@@ -83,5 +87,6 @@
         <p>Already have an account? <a href="#">Log in</a></p>
       </section>
     </form>
+    <script src="script.js"></script>
   </body>
 </html>
