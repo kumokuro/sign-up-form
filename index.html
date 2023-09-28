@@ -14,60 +14,73 @@
   </head>
   <body>
     <!-- Header Image -->
-    <img
-      src="/photos/photo.jpg"
-      alt="Picture of a clean home and a hanging rack of linen."
-    />
+
+    <div class="image-container">
+      <!--<img
+        src="/photos/photo.jpg"
+        alt="Picture of a clean home and a hanging rack of linen."
+      /> -->
+
+      <div class="banner">
+        <img src="/photos/transparent magic touch logo.png" alt="logo" />
+      </div>
+    </div>
 
     <!-- Form -->
     <form action="#" method="post">
       <!-- Top -->
-      <section>
+      <section class="top">
         <h2>
           This is not a real online service! You know you need something like
-          this in your life to help realize your deepest dreams. Sign up now to
-          get started.
+          this in your life to help realize your deepest dreams. Sign up
+          <i>now</i> to get started.
         </h2>
-        <h2>You know you want to.</h2>
+        <h2>You <i>know</i> you want to.</h2>
       </section>
       <!-- Middle -->
-      <section>
+      <section class="middle">
         <fieldset>
           <p>
             <legend>Let's do this!</legend>
           </p>
           <ul>
-            <li>
-              <label for="first_name">First Name</label>
-              <input type="text" id="first_name" />
-            </li>
-            <li>
-              <label for="last_name">Last Name</label>
-              <input type="text" id="last_name" />
-            </li>
-            <li>
-              <label for="email">Email</label>
-              <input type="email" id="email" />
-            </li>
-            <li>
-              <label for="phone_number">Phone Number</label>
-              <input type="tel" id="phone_number" />
-            </li>
-            <li>
-              <label for="password">Password</label>
-              <input type="password" id="password" />
-            </li>
-            <li>
-              <label for="confirm_password">Confirm Password</label>
-              <input type="password" id="confirm_password" />
-            </li>
+            <div class="fullname">
+              <li>
+                <label for="first_name">FIRST NAME</label>
+                <input type="text" id="first_name" />
+              </li>
+              <li class="right-side">
+                <label for="last_name">LAST NAME</label>
+                <input type="text" id="last_name" />
+              </li>
+            </div>
+            <div class="row-2">
+              <li>
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" />
+              </li>
+              <li class="right-side">
+                <label for="phone_number">PHONE NUMBER</label>
+                <input type="tel" id="phone_number" />
+              </li>
+            </div>
+            <div class="row-3">
+              <li>
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" />
+              </li>
+              <li class="right-side">
+                <label for="confirm_password">CONFIRM PASSWORD</label>
+                <input type="password" id="confirm_password" />
+              </li>
+            </div>
           </ul>
         </fieldset>
       </section>
       <!-- Bottom -->
-      <section>
+      <section class="bottom">
         <button type="submit">Create Account</button>
-        <p>Already have an account? Log in</p>
+        <p>Already have an account? <a href="#">Log in</a></p>
       </section>
     </form>
   </body>
